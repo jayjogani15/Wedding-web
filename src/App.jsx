@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useMusic } from './hooks/useMusic';
 import { LoadingScreen } from './components/LoadingScreen';
 import { OpeningScreen } from './components/OpeningScreen';
@@ -88,6 +89,9 @@ export default function App() {
         {/* Section 8: Final Cinematic Wedding Screen & Footer */}
         <FinalSection />
       </main>
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }

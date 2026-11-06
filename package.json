@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^2.1.0",
     "canvas-confetti": "^1.9.3",
     "framer-motion": "^11.11.17",
     "isomorphic-git": "^1.44.11",

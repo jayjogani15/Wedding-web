@@ -88,13 +88,8 @@ export function useMusic() {
       audio.src = weddingConfig.assets.audioTrack;
 
       audio.addEventListener('error', () => {
-        // Fallback to secondary mp3 / wav if primary file encounters an issue
-        if (!audio.src.includes('romantic-bansuri')) {
-          audio.src = '/assets/audio/romantic-bansuri.mp3';
-          audio.play().catch(() => initWebAudio());
-        } else {
-          initWebAudio();
-        }
+        // Fallback to Web Audio synthesis if audio file cannot be loaded
+        initWebAudio();
       });
 
       if (typeof window !== 'undefined') {

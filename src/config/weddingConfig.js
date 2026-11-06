@@ -110,6 +110,6 @@ export const weddingConfig = {
     harikrishnaMaharaj: `${import.meta.env.BASE_URL}assets/images/harikrishna-maharaj.jpg`,
     swaminarayanLeft: `${import.meta.env.BASE_URL}assets/images/swaminarayan-flower.jpg`,
     swaminarayanRight: `${import.meta.env.BASE_URL}assets/images/swaminarayan-gold.jpg`,
-    audioTrack: `${import.meta.env.BASE_URL}assets/audio/dpstudiomusic-indian-background-flute-250098.mp3`,
+    audioTrack: `${import.meta.env.BASE_URL}assets/audio/romantic-bansuri.mp3`,
   }
 };

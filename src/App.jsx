@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
 import { useMusic } from './hooks/useMusic';
 import { LoadingScreen } from './components/LoadingScreen';
 import { OpeningScreen } from './components/OpeningScreen';
@@ -90,8 +91,9 @@ export default function App() {
         <FinalSection />
       </main>
 
-      {/* Vercel Speed Insights */}
+      {/* Vercel Speed Insights & Web Analytics */}
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }

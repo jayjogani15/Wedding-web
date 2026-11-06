@@ -30,3 +30,8 @@ dist-ssr
 .env.test.local
 .env.production.local
 
+# Temporary setup scripts
+git_init_commit.cjs
+search_git.ps1
+
+

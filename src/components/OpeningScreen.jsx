@@ -36,7 +36,8 @@ export const OpeningScreen = ({ isOpen, onOpenInvitation }) => {
         <motion.div
           key="opening-curtain"
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, scale: 1.04, filter: 'blur(8px)' }}
+          exit={{ opacity: 0, scale: 1.03 }}
+          style={{ willChange: 'opacity, transform' }}
           transition={{ duration: 0.9, ease: [0.43, 0.13, 0.23, 0.96] }}
           className="fixed inset-0 z-40 flex items-center justify-center overflow-hidden bg-ivory select-none"
         >

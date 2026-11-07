@@ -21,15 +21,18 @@ export const FloatingPetals = () => {
     return () => mediaQuery.removeEventListener('change', handler);
   }, []);
 
-  // Generate a fixed set of smooth floating petals (mix of rose pink and marigold golden tones)
+  // Generate a smooth, lightweight set of floating petals (scaled down for mobile devices)
   const petals = useMemo(() => {
-    return Array.from({ length: 18 }).map((_, i) => ({
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+    const count = isMobile ? 8 : 16;
+
+    return Array.from({ length: count }).map((_, i) => ({
       id: i,
       xStart: Math.random() * 100, // %
       xEnd: (Math.random() * 100 + (Math.random() * 20 - 10)), // drift
-      size: 14 + Math.random() * 14, // px
-      duration: 12 + Math.random() * 10, // seconds
-      delay: Math.random() * 15, // seconds
+      size: isMobile ? (10 + Math.random() * 10) : (14 + Math.random() * 12), // px
+      duration: 14 + Math.random() * 10, // seconds
+      delay: Math.random() * 12, // seconds
       rotateStart: Math.random() * 360,
       rotateEnd: Math.random() * 720,
       color: i % 3 === 0 
@@ -37,7 +40,7 @@ export const FloatingPetals = () => {
         : i % 3 === 1 
         ? '#F6DDE0' // Blush pink
         : '#ECC575', // Golden marigold petal
-      opacity: 0.5 + Math.random() * 0.35,
+      opacity: 0.45 + Math.random() * 0.3,
     }));
   }, []);
 
@@ -56,12 +59,12 @@ export const FloatingPetals = () => {
             height: petal.size * 1.3,
             left: `${petal.xStart}vw`,
             top: '-5%',
+            willChange: 'transform',
           }}
           animate={{
             y: ['0vh', '108vh'],
             x: [`${petal.xStart}vw`, `${petal.xEnd}vw`],
             rotate: [petal.rotateStart, petal.rotateEnd],
-            rotateX: [0, 180, 360],
           }}
           transition={{
             duration: petal.duration,

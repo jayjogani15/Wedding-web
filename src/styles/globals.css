@@ -41,12 +41,15 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   background: var(--ivory);
   color: var(--dark-brown);
   font-family: var(--font-body);

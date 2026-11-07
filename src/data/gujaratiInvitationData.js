@@ -5,39 +5,6 @@
 
 export const gujaratiCardsData = [
   {
-    id: "card-1",
-    cardNumber: 1,
-    titleGujarati: "ગણેશ નોતરૂ",
-    englishTitle: "Ganesh Notru (Devotional Invitation)",
-    category: "શ્રી ગણેશ સ્થાપના",
-    dateFormatted: "૨૫/૧૧/૨૦૨૬ • બુધવાર",
-    timeFormatted: "સાંજે ૬.૦૦ કલાકે",
-    venueName: "ઋતા પાર્ટી પ્લોટ, સરથાણા જકાતનાકા, સુરત",
-    image: `${import.meta.env.BASE_URL}assets/images/gujarati-card-1.jpg`,
-    content: {
-      shloka: "॥ શ્રી ગણેશાય નમઃ ॥",
-      mainHeading: "॥ ગણેશ નોતરૂ ॥",
-      subHeading: "॥ સ્વરૂચી ભોજન ॥",
-      tithi: "કારતક વદ ૧ ને બુધવાર",
-      tarikh: "તા. ૨૫/૧૧/૨૦૨૬ ના રોજ",
-      samay: "સાંજે ૬.૦૦ કલાકે",
-      nimantran: "આપશ્રી સજોડે પધારશોજી",
-      sthalTitle: "॥ શુભ સ્થળ ॥",
-      sthalDetails: [
-        "\"ઋતા પાર્ટી પ્લોટ\"",
-        "ગુરુકૃપા બંગ્લોઝ ની બાજુમાં,",
-        "શ્યામધામ મંદિર પાછળ,",
-        "સરથાણા જકાતનાકા, સુરત."
-      ],
-      nimantrakTitle: "॥ નિમંત્રક ॥",
-      nimantrakNames: [
-        "શ્રી કાળુભાઈ રવજીભાઈ જોગાણી",
-        "શ્રી જય કાળુભાઈ જોગાણી"
-      ],
-      contact: "મો. ૯૮૨૫૭ ૬૦૭૫૬ / ૯૦૨૩૯ ૦૯૫૩૧"
-    }
-  },
-  {
     id: "card-2",
     cardNumber: 2,
     titleGujarati: "પરિવાર આમંત્રણ અને લગ્ન સ્થળ",

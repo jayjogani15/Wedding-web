@@ -15,82 +15,28 @@ export const InvitationBook = ({
   onDownloadPage, 
   onSharePage 
 }) => {
-  const page1 = gujaratiCardsData[0];
-  const page2 = gujaratiCardsData[1];
-  const page3 = gujaratiCardsData[2];
-  const page4 = gujaratiCardsData[3];
-
   return (
-    <div className="w-full max-w-5xl mx-auto space-y-12 sm:space-y-16">
-      {/* ========================================================================= */}
-      {/* 1. UPPER SIDE: PAGE 01 & PAGE 02 (EQUAL HEIGHT SPREAD) */}
-      {/* ========================================================================= */}
-      <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "600px 0px" }}
-        transition={{ duration: 0.6 }}
-        className="w-full"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch justify-items-center">
-          {/* Page 01 */}
-          <div className="w-full flex justify-center">
+    <div className="w-full max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch justify-items-center">
+        {gujaratiCardsData.map((card, index) => (
+          <motion.div
+            key={card.id}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "600px 0px" }}
+            transition={{ duration: 0.6, delay: index * 0.12 }}
+            className="w-full flex justify-center"
+          >
             <InvitationPage
-              card={page1}
+              card={card}
               onOpenViewer={onOpenViewer}
               onDownloadPage={onDownloadPage}
               onSharePage={onSharePage}
               isPrintView={false}
             />
-          </div>
-
-          {/* Page 02 */}
-          <div className="w-full flex justify-center">
-            <InvitationPage
-              card={page2}
-              onOpenViewer={onOpenViewer}
-              onDownloadPage={onDownloadPage}
-              onSharePage={onSharePage}
-              isPrintView={false}
-            />
-          </div>
-        </div>
-      </motion.div>
-
-      {/* ========================================================================= */}
-      {/* 2. LOWER SIDE: PAGE 03 & PAGE 04 (EQUAL HEIGHT SPREAD) */}
-      {/* ========================================================================= */}
-      <motion.div
-        initial={{ opacity: 0, y: 25 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "600px 0px" }}
-        transition={{ duration: 0.6, delay: 0.15 }}
-        className="w-full"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-stretch justify-items-center">
-          {/* Page 03 */}
-          <div className="w-full flex justify-center">
-            <InvitationPage
-              card={page3}
-              onOpenViewer={onOpenViewer}
-              onDownloadPage={onDownloadPage}
-              onSharePage={onSharePage}
-              isPrintView={false}
-            />
-          </div>
-
-          {/* Page 04 */}
-          <div className="w-full flex justify-center">
-            <InvitationPage
-              card={page4}
-              onOpenViewer={onOpenViewer}
-              onDownloadPage={onDownloadPage}
-              onSharePage={onSharePage}
-              isPrintView={false}
-            />
-          </div>
-        </div>
-      </motion.div>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

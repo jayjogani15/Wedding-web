@@ -78,7 +78,7 @@ export const GujaratiSection = () => {
           <MandalaDivider className="my-3 max-w-sm mx-auto" />
 
           <p className="font-serif text-xs sm:text-sm text-[#49372E]/80 max-w-xl mx-auto tracking-wide">
-            Explore our authentic four-page Gujarati wedding invitation booklet. All family details, lineage, and ceremonies are designed inside each portrait page.
+            Explore our authentic Gujarati wedding invitation booklet. All family details, lineage, and ceremonies are designed inside each portrait page.
           </p>
         </motion.div>
 

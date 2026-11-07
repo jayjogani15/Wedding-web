@@ -64,13 +64,16 @@ img {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--ivory);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--champagne-gold);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--antique-gold);
 }
@@ -233,7 +236,7 @@ img {
   font-weight: 700;
   cursor: pointer;
   transition: transform var(--transition-smooth),
-              box-shadow var(--transition-smooth);
+    box-shadow var(--transition-smooth);
 }
 
 .wedding-button:hover {
@@ -260,7 +263,7 @@ img {
   font-weight: 700;
   cursor: pointer;
   transition: transform var(--transition-smooth),
-              box-shadow var(--transition-smooth);
+    box-shadow var(--transition-smooth);
 }
 
 .wedding-button-maroon:hover {
@@ -274,7 +277,7 @@ img {
 /* Royal Paper Background Pattern */
 .bg-royal-paper {
   background-color: var(--ivory);
-  background-image: 
+  background-image:
     radial-gradient(var(--champagne-gold) 0.5px, transparent 0.5px),
     radial-gradient(var(--antique-gold) 0.5px, var(--ivory) 0.5px);
   background-size: 24px 24px;
@@ -296,19 +299,22 @@ img {
 
 /* Gold Shimmer Button Animation */
 @keyframes goldShimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .gold-shimmer-btn {
-  background: linear-gradient(
-    90deg, 
-    #A98243 0%, 
-    #C6A15B 25%, 
-    #F6DDE0 50%, 
-    #C6A15B 75%, 
-    #A98243 100%
-  );
+  background: linear-gradient(90deg,
+      #A98243 0%,
+      #C6A15B 25%,
+      #F6DDE0 50%,
+      #C6A15B 75%,
+      #A98243 100%);
   background-size: 200% 100%;
   animation: goldShimmer 4s infinite linear;
 }
@@ -316,7 +322,7 @@ img {
 /* Royal Card Border */
 .royal-border {
   border: 1px solid rgba(198, 161, 91, 0.4);
-  box-shadow: 
+  box-shadow:
     0 0 0 1px rgba(255, 255, 255, 0.8) inset,
     0 0 0 4px rgba(198, 161, 91, 0.15) inset,
     0 8px 32px 0 rgba(114, 44, 59, 0.08);
@@ -324,7 +330,7 @@ img {
 
 .royal-border-heavy {
   border: 2px solid var(--champagne-gold);
-  box-shadow: 
+  box-shadow:
     0 0 0 2px var(--ivory) inset,
     0 0 0 5px rgba(169, 130, 67, 0.4) inset,
     0 12px 40px -10px rgba(114, 44, 59, 0.18);
@@ -332,9 +338,22 @@ img {
 
 /* Hanging Bells Animation */
 @keyframes bellSway {
-  0%, 100% { transform: rotate(0deg); transform-origin: top center; }
-  25% { transform: rotate(3deg); transform-origin: top center; }
-  75% { transform: rotate(-3deg); transform-origin: top center; }
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: top center;
+  }
+
+  25% {
+    transform: rotate(3deg);
+    transform-origin: top center;
+  }
+
+  75% {
+    transform: rotate(-3deg);
+    transform-origin: top center;
+  }
 }
 
 .animate-bell {
@@ -343,8 +362,17 @@ img {
 
 /* Soft Diya Glow Animation */
 @keyframes diyaGlow {
-  0%, 100% { filter: drop-shadow(0 0 4px rgba(198, 161, 91, 0.6)) drop-shadow(0 0 12px rgba(232, 183, 189, 0.4)); opacity: 0.9; }
-  50% { filter: drop-shadow(0 0 8px rgba(198, 161, 91, 0.9)) drop-shadow(0 0 20px rgba(198, 161, 91, 0.6)); opacity: 1; }
+
+  0%,
+  100% {
+    filter: drop-shadow(0 0 4px rgba(198, 161, 91, 0.6)) drop-shadow(0 0 12px rgba(232, 183, 189, 0.4));
+    opacity: 0.9;
+  }
+
+  50% {
+    filter: drop-shadow(0 0 8px rgba(198, 161, 91, 0.9)) drop-shadow(0 0 20px rgba(198, 161, 91, 0.6));
+    opacity: 1;
+  }
 }
 
 .animate-diya {
@@ -353,6 +381,7 @@ img {
 
 /* Reduced Motion Safety */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -371,19 +400,23 @@ img {
     size: A4 portrait;
     margin: 8mm;
   }
+
   body {
     background: #FFF9EF !important;
     color: #49372E !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
+
   body * {
     visibility: hidden;
   }
+
   #gujarati-patrika-print-container,
   #gujarati-patrika-print-container * {
     visibility: visible;
   }
+
   #gujarati-patrika-print-container {
     position: absolute;
     left: 0;
@@ -392,6 +425,7 @@ img {
     display: block !important;
     background: transparent !important;
   }
+
   .print-page-break {
     page-break-after: always;
     break-after: page;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { weddingConfig } from '../config/weddingConfig';
 import { MandalaDivider, DiyaLamp, FloralCorner } from '../components/OrnamentalBorders';
-import { Calendar, Clock, MapPin, ExternalLink, Navigation, Copy, Check } from 'lucide-react';
+import { MapPin, ExternalLink, Navigation, Copy, Check } from 'lucide-react';
 
 export const EventSection = () => {
   const [copied, setCopied] = useState(false);
@@ -68,45 +68,6 @@ export const EventSection = () => {
           <p className="gujarati-heading text-lg sm:text-xl font-bold text-[#722C3B] mb-6">
             ॥ {weddingConfig.venue.nameGujarati} ॥
           </p>
-
-          {/* Date & Time Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 text-left max-w-lg mx-auto">
-            {/* Date Details */}
-            <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-cream/40 border border-champagne/30">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-champagne/20 text-deepMaroon shrink-0 mt-0.5">
-                <Calendar className="w-5 h-5 text-deepMaroon" />
-              </div>
-              <div>
-                <span className="text-[10px] uppercase tracking-wider font-semibold text-antiqueGold block">
-                  DATE
-                </span>
-                <span className="font-serif text-sm sm:text-base font-bold text-darkBrown block">
-                  {weddingConfig.venue.dateFormatted}
-                </span>
-                <span className="text-xs text-darkBrown/70">
-                  Thursday Evening
-                </span>
-              </div>
-            </div>
-
-            {/* Time Details */}
-            <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-cream/40 border border-champagne/30">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full bg-champagne/20 text-deepMaroon shrink-0 mt-0.5">
-                <Clock className="w-5 h-5 text-deepMaroon" />
-              </div>
-              <div>
-                <span className="text-[10px] uppercase tracking-wider font-semibold text-antiqueGold block">
-                  TIME
-                </span>
-                <span className="font-serif text-sm sm:text-base font-bold text-darkBrown block">
-                  {weddingConfig.venue.timeFormatted}
-                </span>
-                <span className="text-xs text-darkBrown/70">
-                  Baraat &amp; Hastamelap
-                </span>
-              </div>
-            </div>
-          </div>
 
           {/* Full Venue Address Box */}
           <div className="p-4 rounded-2xl bg-[#FFFDF7] border border-[#C6A15B]/50 shadow-sm max-w-lg mx-auto mb-6 text-center space-y-1">

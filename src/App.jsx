@@ -12,7 +12,6 @@ import { FamilySection } from './sections/FamilySection';
 import { DateSection } from './sections/DateSection';
 import { CoupleSection } from './sections/CoupleSection';
 import { EventSection } from './sections/EventSection';
-import { GujaratiSection } from './sections/GujaratiSection';
 import { MessageSection } from './sections/MessageSection';
 import { RSVPSection } from './sections/RSVPSection';
 import { FinalSection } from './sections/FinalSection';
@@ -77,9 +76,6 @@ export default function App() {
 
         {/* Section 5: Wedding Celebration & Location */}
         <EventSection />
-
-        {/* DEDICATED SECTION: Our Traditional Gujarati Invitation (Four Original Cards) */}
-        <GujaratiSection />
 
         {/* Section 6: Wedding Message */}
         <MessageSection />

@@ -12,24 +12,14 @@ export const gujaratiCardsData = [
     titleGujarati: "લગ્ન પ્રસંગો અને કાર્યક્રમ",
     englishTitle: "Avasar Mangalyam (Wedding Ceremonies)",
     category: "શુભ લગ્ન પ્રસંગો",
-    dateFormatted: "૨૫ અને ૨૬ નવેમ્બર ૨૦૨૬",
-    timeFormatted: "૫ શુભ પ્રસંગો",
+    dateFormatted: "૨૬ નવેમ્બર ૨૦૨૬ • ગુરુવાર",
+    timeFormatted: "શુભ લગ્ન પ્રસંગો",
     venueName: "ઋતા પાર્ટી પ્લોટ, સુરત",
     image: `${import.meta.env.BASE_URL}assets/images/gujarati-card-4.jpg`,
     content: {
       shloka: "॥ શ્રી હરિકૃષ્ણ મહારાજ ॥",
       heading: "॥ અવસર માંગલ્યમ્ ॥",
       events: [
-        {
-          name: "॥ મંડપ મુહૂર્ત ॥",
-          dateTime: "તા. ૨૫/૧૧/૨૦૨૬ને બુધવાર, બપોરે ૨:૧૫ કલાકે",
-          place: "(ઋતા પાર્ટી પ્લોટ)"
-        },
-        {
-          name: "॥ રાસ ગરબા ॥",
-          dateTime: "તા. ૨૫/૧૧/૨૦૨૬ને બુધવાર, રાત્રે ૮.૦૦ કલાકે",
-          place: "(ઋતા પાર્ટી પ્લોટ)"
-        },
         {
           name: "॥ જાન આગમન ॥",
           dateTime: "તા. ૨૬/૧૧/૨૦૨૬ને ગુરુવાર, રાત્રે ૬.૦૦ કલાકે",
